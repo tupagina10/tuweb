@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --colorTextos: #49378c;
+    --colorBotones: #f69229;
+    --colorFondo: #49378c;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+/*menu*/
+
+.menu-navegacion{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.ima1{
+    border-radius: 15px;
+}
+
+.logo{
+    margin: 3px;
+    padding: 50px;
+    height: 180px;
+    width: 80px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;   
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    color:var(--colorFondo);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.enlaces a:hover{
+    text-decoration: underline;
+}
+
+.hero{
+    height: 500px;
+    background-image: linear-gradient(to top left, #49378c3b, rgba(219, 93, 179, 0.204)), url("../imagenes/portada1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-weight: 300;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.boton{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #49378c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* main*/
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 35px;
+    color: var(--colorFondo);
+}
+
+.copy{
+    text-align: center;
+    color: var(--colorTextos);
+    margin: 20px 0;
+}
+
+.servicios{
+    padding-top: var(--marginElementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.servicio{
+    font-size: 20px;
+    width: 13em;
+    height: 13em;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .7);
+}
+
+.nave{
+    background-image: url("../imagenes/carpaempresa.jpg");
+
+}
+
+.carpas{
+    background-image: url("../imagenes/carpatipoarem.jpg");
+}
+
+.stands{
+    background-image: url("../imagenes/stands\ 1.jpeg");
+}
+
+.vallas{
+    background-image: url("../imagenes/vallas\ \(1\).jpeg");
+}
+
+.tarimas{
+    background-image: url("../imagenes/tarimas/13.jpeg");
+}
+
+.templetes{
+    background-image: url("../imagenes/templetes/25.jpeg");
+}
+
+.gradas{
+    background-image: url("../imagenes/templetes/25.jpeg");
+}
+
+.mobiliario{
+    background-image: url("../imagenes/domo/domo1.jpg");
+}
+
+
+
+.projects{
+    background: #f2f2f2;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagenes img{
+    display: block;
+    object-fit: cover;
+    width: 30%;
+    height: 220px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .7);
+    margin-bottom: var(--marginElementos);
+    display: flex;
+}
+
+.datoslog{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.copy{
+
+    text-align: justify;
+}
+
+.person{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 300;
+}
+.person1{
+    color: #49378c67;
+    font-size: 10px;
+    text-align: center;
+}
+
+.logopie{
+    height: 250px;
+    width: 400;
+    object-fit: cover;
+    margin-left: calc(50% - 100px);
+    margin-bottom: 0;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+footer{
+    background-image: linear-gradient(to top left, #49378cb2, #db5db3bb), url("../imagenes/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 0;
+}
+
+footer .titulo-seccion,
+footer .copy{
+    color: #fff;
+}
+
+.redes-sociales{
+    padding-top: var(--marginElementos);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    
+}
+
+
+.redes-sociales i{
+    font-size: 60px;
+    color: #fff;
+}
+
+.telefono{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#Contactanos{
+    margin-top: 50px;
+    padding: 50px;
+
+}
+
+.final{
+    display: flex;
+}
+
+.descripcion{
+    font-size: 15px;
+    color: #49378c15;
+}
+
+.descripcion1{
+    font-size: 3px;
+    color: #49378c15;
+}
+
+.telefono{
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .logo{
+       height: 100px;
+       width: 80px;
+       margin: 0px;
+       padding: 10px 0px;
+       align-items: center;
+       justify-content: center;
+       margin-right: 80px;
+
+       } 
+
+    .hero h1{
+        font-size: 38px;
+    }
+
+    .beneficio{
+        margin-bottom: var(--marginElementos);
+    }
+
+    .contenedor-imagenes img{
+        width: 90%;
+    }
+
+    .redes-sociales{
+        /* flex-direction: column; */
+        align-items: center;
+        size-adjust: inherit;
+    }
+    
+    .redes-sociales i{
+        margin-bottom: 20px;
+    }
+
+    .final{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    
+    }
+
+    .contenedor-textos{
+        padding-top: 50px;
+    }
+    
+
+.mapa{
+width: 350px;
+justify-content: center;
+}
+
+.servicio{
+
+    font-size: 14px;
+    width: 10em;
+    height: 10em;
+    margin-top: 5px;
+
+}
+
+.hero{
+    height: 350px;
+}
+
+.descripcion{
+    font-size: 1px;
+}
+
+
+}
